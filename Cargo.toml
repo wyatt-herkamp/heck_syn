@@ -1,0 +1,18 @@
+[package]
+name = "heck_syn"
+version = "0.0.1"
+edition = "2021"
+description = "Easily Add Case Conversions to Syn Macros"
+repository = "https://github.com/wyatt-herkamp/heck_syn"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+
+[dependencies]
+syn = "2"
+heck = "0.5.0-rc.1"
+
+strum = { version = "0.25", features = ["derive"] }
+[dev-dependencies]
+quote = "1.0"
